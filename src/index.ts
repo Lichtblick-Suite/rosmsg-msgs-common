@@ -1,5 +1,5 @@
-import { MessageDefinition } from "@foxglove/message-definition";
-import { parse, ParseOptions } from "@foxglove/rosmsg";
+import { MessageDefinition } from "@lichtblick/message-definition";
+import { parse, ParseOptions } from "@lichtblick/rosmsg";
 import { mkdir, readdir, readFile, writeFile } from "fs/promises";
 import { join, basename, sep } from "path";
 import { format, Options } from "prettier";
@@ -77,7 +77,7 @@ async function loadDefinitions(
     const typeName = dataTypeToTypeName(dataType);
     const msgdef = await readFile(filename, { encoding: "utf8" });
     const schema = parse(msgdef, parseOptions);
-    (schema[0] as MessageDefinition).name = typeName;
+    schema[0]!.name = typeName;
     for (const entry of schema) {
       if (entry.name == undefined) {
         throw new Error(`Failed to parse ${dataType} from ${filename}`);
@@ -165,7 +165,7 @@ function generateDefinitions(
 ): string {
   let output = `${LICENSE}
 
-import { MessageDefinition } from "@foxglove/message-definition";
+import { MessageDefinition } from "@lichtblick/message-definition";
 `;
 
   for (const [groupName, definitions] of definitionsByGroup.entries()) {
