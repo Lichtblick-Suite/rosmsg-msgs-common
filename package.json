@@ -20,13 +20,13 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/lichtblick-suite/rosmsg-msgs-common.git"
+    "url": "https://github.com/Lichtblick-Suite/rosmsg-msgs-common"
   },
   "author": {
     "name": "Lichtblick",
     "email": "lichtblick@bmwgroup.com"
   },
-  "homepage": "https://github.com/lichtblick/rosmsg-msgs-common",
+  "homepage": "https://github.com/Lichtblick-Suite/rosmsg-msgs-common",
   "main": "dist/index.js",
   "module": "dist/index.esm.js",
   "typings": "dist/index.d.ts",
