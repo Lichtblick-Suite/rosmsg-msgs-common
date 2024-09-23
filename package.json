@@ -1,6 +1,6 @@
 {
   "name": "@lichtblick/rosmsg-msgs-common",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Common ROS message definitions using @lichtblick/rosmsg",
   "license": "MIT",
   "keywords": [
@@ -20,7 +20,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/Lichtblick-Suite/rosmsg-msgs-common"
+    "url": "https://github.com/Lichtblick-Suite/rosmsg-msgs-common.git"
   },
   "author": {
     "name": "Lichtblick",
