@@ -36,12 +36,12 @@ jobs:
         run: yarn run test:types
       - name: Publish to NPM (dry run)
         # `yarn publish` does not support --provenance
-        run: npm publish foxglove-rosmsg-msgs-common-*.tgz --provenance --access public --dry-run
+        run: npm publish lichtblick-rosmsg-msgs-common-*.tgz --provenance --access public --dry-run
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_PUBLISH_TOKEN }}
       - name: Publish to NPM
         if: ${{ startsWith(github.ref, 'refs/tags/v') }}
         # `yarn publish` does not support --provenance
-        run: npm publish foxglove-rosmsg-msgs-common-*.tgz --provenance --access public
+        run: npm publish lichtblick-rosmsg-msgs-common-*.tgz --provenance --access public
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_PUBLISH_TOKEN }}

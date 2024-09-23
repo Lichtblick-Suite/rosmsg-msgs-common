@@ -1,7 +1,7 @@
 {
-  "name": "@foxglove/rosmsg-msgs-common",
+  "name": "@lichtblick/rosmsg-msgs-common",
   "version": "3.2.1",
-  "description": "Common ROS message definitions using @foxglove/rosmsg",
+  "description": "Common ROS message definitions using @lichtblick/rosmsg",
   "license": "MIT",
   "keywords": [
     "ros",
@@ -20,13 +20,13 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/foxglove/rosmsg-msgs-common.git"
+    "url": "https://github.com/lichtblick-suite/rosmsg-msgs-common.git"
   },
   "author": {
-    "name": "Foxglove Technologies Inc",
-    "email": "contact@foxglove.dev"
+    "name": "Lichtblick",
+    "email": "lichtblick@bmwgroup.com"
   },
-  "homepage": "https://github.com/foxglove/rosmsg-msgs-common",
+  "homepage": "https://github.com/lichtblick/rosmsg-msgs-common",
   "main": "dist/index.js",
   "module": "dist/index.esm.js",
   "typings": "dist/index.d.ts",
@@ -43,11 +43,11 @@
     "test:types": "tsc --noEmit ./dist/index.d.ts"
   },
   "devDependencies": {
-    "@foxglove/eslint-plugin": "0.21.0",
+    "@lichtblick/eslint-plugin": "1.0.1",
     "@types/node": "^18.14.2",
     "@types/prettier": "^2.7.2",
-    "@typescript-eslint/eslint-plugin": "5.54.0",
-    "@typescript-eslint/parser": "5.54.0",
+    "@typescript-eslint/eslint-plugin": "^6",
+    "@typescript-eslint/parser": "^6",
     "esbuild": "0.17.10",
     "esbuild-runner": "2.2.2",
     "eslint": "8.35.0",
@@ -60,7 +60,7 @@
     "typescript": "4.9.5"
   },
   "dependencies": {
-    "@foxglove/message-definition": "^0.3.1",
-    "@foxglove/rosmsg": "^5.0.4"
+    "@lichtblick/message-definition": "1.0.0",
+    "@lichtblick/rosmsg": "1.0.0"
   }
 }
